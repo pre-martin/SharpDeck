@@ -38,6 +38,24 @@ namespace SharpDeck.Enums
         /// Defines a Corsair G-Key compatible keyboard: kESDSDKDeviceType_CorsairGKeys.
         /// </summary>
         [EnumMember(Value = "kESDSDKDeviceType_CorsairGKeys")]
-        CorsairGKeys = 4
+        CorsairGKeys = 4,
+
+        /// <summary>
+        /// Defines a Stream Deck Pedal: kESDSDKDeviceType_StreamDeckPedal.
+        /// </summary>
+        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckPedal")]
+        StreamDeckPedal = 5,
+
+        /// <summary>
+        /// Defines a Corsair Voyager: kESDSDKDeviceType_CorsairVoyager.
+        /// </summary>
+        [EnumMember(Value = "kESDSDKDeviceType_CorsairVoyager")]
+        CorsairVoyager = 6,
+
+        /// <summary>
+        /// Defines a Stream Deck Plus: kESDSDKDeviceType_StreamDeckPlus.
+        /// </summary>
+        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckPlus")]
+        StreamDeckPlus = 7,
     }
 }
