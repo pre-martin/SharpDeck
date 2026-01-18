@@ -17,6 +17,12 @@ namespace SharpDeck.Events.Received
         /// The controller is a keypad, i.e. a button.
         /// </summary>
         [EnumMember(Value = "Keypad")]
-        Keypad
+        Keypad,
+
+        /// <summary>
+        /// Information area, e.g. on a Stream Dock 293S.
+        /// </summary>
+        [EnumMember(Value = "Information")]
+        Information
     }
 }
