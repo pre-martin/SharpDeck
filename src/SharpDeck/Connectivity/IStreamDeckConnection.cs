@@ -38,6 +38,11 @@ namespace SharpDeck.Connectivity
         event EventHandler<DeviceEventArgs> DeviceDidDisconnect;
 
         /// <summary>
+        /// Occurs when a Stream Deck device changed, for example its name or size.
+        /// </summary>
+        event EventHandler<DeviceEventArgs> DeviceDidChange;
+
+        /// <summary>
         /// Occurs when a dial is pressed.
         /// </summary>
         event EventHandler<ActionEventArgs<DialPayload>> DialDown;
