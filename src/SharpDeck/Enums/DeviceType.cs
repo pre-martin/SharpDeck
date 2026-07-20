@@ -57,5 +57,10 @@ namespace SharpDeck.Enums
         /// </summary>
         [EnumMember(Value = "kESDSDKDeviceType_StreamDeckPlus")]
         StreamDeckPlus = 7,
+
+        /// <summary>
+        /// Defines a Stream Deck Plus XL.
+        /// </summary>
+        StreamDeckPlusXL = 13,
     }
 }

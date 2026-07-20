@@ -19,6 +19,7 @@
         ///     <item><see cref="DeviceType.StreamDeckPedal"/> = "MyProfilePedal"</item>
         ///     <item><see cref="DeviceType.CorsairVoyager"/> = "MyProfileVoyager"</item>
         ///     <item><see cref="DeviceType.StreamDeckPlus"/> = "MyProfilePlus"</item>
+        ///     <item><see cref="DeviceType.StreamDeckPlusXL"/> = "MyProfilePlusXL"</item>
         /// </list>
         /// </summary>
         /// <param name="deviceType">The device type; this instance.</param>
@@ -36,6 +37,7 @@
                 case DeviceType.StreamDeckPedal: return $"{profile}Pedal";
                 case DeviceType.CorsairVoyager: return $"{profile}Voyager";
                 case DeviceType.StreamDeckPlus: return $"{profile}Plus";
+                case DeviceType.StreamDeckPlusXL: return $"{profile}PlusXL";
                 default: throw new NotSupportedException($"Unable to transform profile name; {deviceType} is not a supported device.");
             }
         }
