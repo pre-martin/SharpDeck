@@ -1,65 +1,78 @@
 namespace SharpDeck.Enums
 {
-    using System.Runtime.Serialization;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-
     /// <summary>
     /// Provides an enumeration of devices.
+    /// See <see href="https://developer.elgato.com/documentation/stream-deck/sdk/manifest/#device-type">Elgato Developer Documentation</see> for more information.
     /// </summary>
-    [JsonConverter(typeof(StringEnumConverter))]
     public enum DeviceType
     {
         /// <summary>
-        /// Defines a Stream Deck: kESDSDKDeviceType_StreamDeck.
+        /// Stream Deck, comprised of 15 customizable LCD keys in a 5 x 3 layout.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_StreamDeck")]
         StreamDeck = 0,
 
         /// <summary>
-        /// Defines a Stream Deck Mini: kESDSDKDeviceType_StreamDeckMini.
+        /// Stream Deck Mini, comprised of 6 customizable LCD keys in a 3 x 2 layout.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckMini")]
         StreamDeckMini = 1,
 
         /// <summary>
-        /// Defines a Stream Deck XL: kESDSDKDeviceType_StreamDeckXL.
+        /// Stream Deck XL, comprised of 32 customizable LCD keys in an 8 x 4 layout.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckXL")]
         StreamDeckXL = 2,
 
         /// <summary>
-        /// Defines a Stream Deck Mobile: kESDSDKDeviceType_StreamDeckMobile.
+        /// Stream Deck Mobile, for iOS and Android.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckMobile")]
         StreamDeckMobile = 3,
 
         /// <summary>
-        /// Defines a Corsair G-Key compatible keyboard: kESDSDKDeviceType_CorsairGKeys.
+        /// Corsair G Keys, available on select Corsair keyboards.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_CorsairGKeys")]
         CorsairGKeys = 4,
 
         /// <summary>
-        /// Defines a Stream Deck Pedal: kESDSDKDeviceType_StreamDeckPedal.
+        /// Stream Deck Pedal, comprised of 3 customizable pedals.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckPedal")]
         StreamDeckPedal = 5,
 
         /// <summary>
-        /// Defines a Corsair Voyager: kESDSDKDeviceType_CorsairVoyager.
+        /// Corsair Voyager laptop, comprising 10 buttons in a horizontal line above the keyboard.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_CorsairVoyager")]
         CorsairVoyager = 6,
 
         /// <summary>
-        /// Defines a Stream Deck Plus: kESDSDKDeviceType_StreamDeckPlus.
+        /// Stream Deck +, comprised of 8 customizable LCD keys in a 4 x 2 layout, a touch strip, and 4 dials.
         /// </summary>
-        [EnumMember(Value = "kESDSDKDeviceType_StreamDeckPlus")]
         StreamDeckPlus = 7,
 
         /// <summary>
-        /// Defines a Stream Deck Plus XL.
+        /// SCUF controller G keys, available on select SCUF controllers, for example SCUF Envision.
+        /// </summary>
+        SCUFController = 8,
+
+        /// <summary>
+        /// Stream Deck Neo, comprised of 8 customizable LCD keys in a 4 x 2 layout, an info bar, and 2 touch points for page navigation.
+        /// </summary>
+        StreamDeckNeo = 9,
+
+        /// <summary>
+        /// Stream Deck Studio, comprised of 32 customizable LCD keys in a 16 x 2 layout, and 2 dials (1 on either side).
+        /// </summary>
+        StreamDeckStudio = 10,
+
+        /// <summary>
+        /// Virtual Stream Deck, comprised of 1 to 64 action (on-screen) on a scalable canvas, with a maximum layout of 8 x 8.
+        /// </summary>
+        VirtualStreamDeck = 11,
+
+        /// <summary>
+        /// High-performance gaming keyboard, with a built-in Stream Deck comprised of 12 customizable LCD keys in a 3 x 4 layout, an LCD screen, and 2 dials.
+        /// </summary>
+        Galleon100SD = 12,
+
+        /// <summary>
+        /// Stream Deck + XL, comprised of 36 customizable LCD keys in a 9 x 4 layout, a touch strip, and 6 dials.
         /// </summary>
         StreamDeckPlusXL = 13,
     }
