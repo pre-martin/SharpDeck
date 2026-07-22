@@ -1,5 +1,8 @@
-[![SharpDeck verion on NuGet.org](https://img.shields.io/nuget/v/SharpDeck.svg)](https://www.nuget.org/packages/SharpDeck/)
-[![Build status](https://github.com/GeekyEggo/SharpDeck/workflows/build/badge.svg)](https://github.com/GeekyEggo/SharpDeck/actions?query=workflow%3Abuild)
+# Fork
+
+This is a fork of SharpDeck, since SharpDeck has not been maintained since December 2022. I am continuing to develop this fork to meet the needs of my [Stream Deck plugin](https://github.com/pre-martin/StreamDeckSimHubPlugin).
+
+Below is the original README:
 
 # SharpDeck
 
@@ -20,7 +23,7 @@ SharpDeck enables console applications to easily communicate with Stream Deck; r
 public static void Main(string[] args)
 {
 #if DEBUG
-    System.Diagnostics.Debugger.Launch(); 
+    System.Diagnostics.Debugger.Launch();
 #endif
 
     // Connect to Stream Deck.
@@ -31,7 +34,7 @@ public static void Main(string[] args)
 ### ⚡ 2. Create an action
 ```csharp
 using SharpDeck;
-using SharpDeck.Events.Received; 
+using SharpDeck.Events.Received;
 
 [StreamDeckAction("com.geekyeggo.exampleplugin.firstaction")]
 public class MyFirstAction : StreamDeckAction
